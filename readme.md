@@ -52,8 +52,9 @@ If audio notifications aren't working:
 
 3. **Test script manually:**
    ```bash
-   ~/claude/hooks/notify_audio.sh question  # Should play Sosumi sound
-   ~/claude/hooks/notify_audio.sh done      # Should play Hero sound
+   ~/claude/hooks/notify_audio.sh question  # Should play Hero sound
+   ~/claude/hooks/notify_audio.sh done      # Should play Sosumi sound
+   ~/claude/hooks/notify_audio.sh subagent  # Should play Purr sound
    ```
 
 4. **Check Claude Code hook configuration:**
@@ -65,9 +66,9 @@ If audio notifications aren't working:
 
 | Hook Event | When it fires | Sound | Purpose |
 |------------|---------------|-------|---------|
-| **Notification** | Claude needs permission/input | Sosumi | Classic Mac alert |
-| **Stop** | Main agent finishes | Hero | Satisfying completion |
-| **SubagentStop** | Sub-agent finishes | Hero | Task completion |
+| **Notification** | Claude needs permission/input | Hero | Prominent alert for attention |
+| **Stop** | Main agent finishes | Sosumi | General completion notification |
+| **SubagentStop** | Sub-agent finishes | Purr | Gentle subagent completion |
 
 ## Setup Notes
 
