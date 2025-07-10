@@ -28,7 +28,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "~/claude/hooks/notify_audio.sh done"
+            "command": "~/claude/hooks/notify_audio.sh subagent"
           }
         ]
       }
